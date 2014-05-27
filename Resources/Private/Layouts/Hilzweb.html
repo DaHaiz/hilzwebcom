@@ -1,12 +1,14 @@
 {namespace flux=Tx_Flux_ViewHelpers}
 {namespace v=Tx_Vhs_ViewHelpers}
+<div xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     f:schemaLocation="http://fluidtypo3.org/schemas/fluid-master.xsd">
 
-<f:layout name="Hilzweb"/>
-<!--<div id="page" class="{settings.pageClass}">-->
+    <f:layout name="Hilzweb"/>
+    <!--<div id="page" class="{settings.pageClass}">-->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <h1>Hilzweb.com</h1>
+
             </div>
             <div class="collapse navbar-collapse">
                 <v:page.menu entryLevel="0" class="nav navbar-nav" expandAll="TRUE" levels="3" />
@@ -19,10 +21,10 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <a id="logo" href="#"></a>
+                <div class="col-md-5">
+                    <a id="logo" href="{f:uri.page(pageUid: 1)}"></a>
                 </div>
-                <div class="col-md-8 mg-top-60">
+                <div class="col-md-7 mg-top-60">
                     <p class="slogan text-center">
                         "Sie liefern das Problem,<br/>
                         wir die Lösung."
@@ -45,5 +47,4 @@
             </div>
         </div>
     </div>
-    <!-- /.container -->
-<!--</div>-->
+</div>

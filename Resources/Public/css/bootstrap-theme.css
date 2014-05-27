@@ -356,6 +356,7 @@ body {
     background: url(img/nav-bg.jpg) repeat;
     height: 60px;
     padding-top: 10px;
+    padding-left: 100px;
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -367,7 +368,9 @@ body {
 }
 
 .navbar-default {
-    border-color: #07507C;
+    border-color: #0c5580;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -376,17 +379,16 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #b7b7b7;
+    color: #DFDFDF;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #cccccc;
-    background-color: #07507C !important;
-    font-size: large;
+    color: #DFDFDF;
+    background-color: #0c5580 !important;
 }
 
 .navbar h1 {
-    color: #ccc;
+    color: #dfdfdf;
     font-size: 16px;
     padding-top: 16px;
     font-weight: bold;
