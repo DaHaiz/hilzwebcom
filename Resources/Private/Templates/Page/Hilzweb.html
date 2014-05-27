@@ -1,0 +1,36 @@
+{namespace flux=Tx_Flux_ViewHelpers}
+{namespace v=Tx_Vhs_ViewHelpers}
+
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers">
+
+    <f:layout name="Hilzweb"/>
+
+    <f:section name="Configuration">
+
+        <flux:flexform id="hilzwebcom">
+
+            <!-- Input field for Fluid variable 'pageClass' -->
+            <flux:flexform.field.input name="settings.pageClass" default="some-css-class"/>
+
+            <!-- Backend layout grid (TYPO3 6.x and greater only) -->
+            <flux:flexform.grid>
+                <flux:flexform.grid.row>
+                    <flux:flexform.grid.column colPos="0" name="Content" style="width: 75%"/>
+                </flux:flexform.grid.row>
+            </flux:flexform.grid>
+
+        </flux:flexform>
+
+    </f:section>
+
+    <f:section name="Content">
+        <!-- Render colPos=0 in this section -->
+        <v:content.render column="0"/>
+    </f:section>
+
+
+
+</div>

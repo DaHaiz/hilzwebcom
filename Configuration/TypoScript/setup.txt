@@ -1,0 +1,19 @@
+plugin.tx_hilzwebcom.view {
+    templateRootPath = EXT:hilzwebcom/Resources/Private/Templates/
+    partialRootPath = EXT:hilzwebcom/Resources/Private/Partials/
+    layoutRootPath = EXT:hilzwebcom/Resources/Private/Layouts/
+}
+plugin.tx_vhs.settings.asset {
+    style_bootstrap {
+        name = style_bootstrap
+        path = EXT:hilzwebcom/Resources/Public/css/bootstrap.css
+    }
+    style_bootstrap_theme {
+        name = style_bootstrap_theme
+        path = EXT:hilzwebcom/Resources/Public/css/bootstrap-theme.css
+    }
+    script {
+        name = script
+        path = EXT:hilzwebcom/Resources/Public/js/bootstrap.min.js
+    }
+}
