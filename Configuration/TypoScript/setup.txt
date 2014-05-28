@@ -4,6 +4,12 @@ plugin.tx_hilzwebcom.view {
     layoutRootPath = EXT:hilzwebcom/Resources/Private/Layouts/
 }
 plugin.tx_vhs.settings.asset {
+    google_webfonts {
+        name = google_webfonts
+        path = http://fonts.googleapis.com/css?family=Lato|PT+Sans|Open+Sans|Oswald
+        type = css
+        external = true
+    }
     style_bootstrap {
         name = style_bootstrap
         path = EXT:hilzwebcom/Resources/Public/css/bootstrap.css
