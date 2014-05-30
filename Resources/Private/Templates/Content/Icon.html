@@ -1,0 +1,37 @@
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+{namespace v=Tx_Vhs_ViewHelpers}
+
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers">
+
+    <f:layout name="Icon"/>
+
+    <f:section name="Configuration">
+        <flux:form id="icon">
+            <flux:field.input name="icon" />
+            <flux:field.input name="iconsize" />
+            <flux:field.input name="iconcolor"/>
+            <flux:field.input name="bgcolor"/>
+        </flux:form>
+    </f:section>
+
+    <f:section name="Preview">
+        <table width="100%">
+            <tr>
+                <td width="100%" style="background-color: {bgcolor}; color: {iconcolor}">
+                    {icon}
+                </td>
+            </tr>
+        </table>
+    </f:section>
+
+    <f:section name="Main">
+        <picture class="icon text-center" style="background-color: {bgcolor}">
+            <span class="glyphicon glyphicon-{icon}"
+                  style="color: {iconcolor}; font-size: {iconsize}"></span>
+        </picture>
+    </f:section>
+
+</div>

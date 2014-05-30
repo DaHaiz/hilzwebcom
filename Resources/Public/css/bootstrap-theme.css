@@ -193,7 +193,7 @@ body {
 }
 .navbar-brand,
 .navbar-nav > li > a {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  text-shadow: none;
 }
 .navbar-inverse {
   background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
@@ -466,4 +466,62 @@ body {
 h1, h2, h3, h4, h5 {
     color: #22465D;
     font-family: 'Open Sans' sans-serif;
+}
+
+.csc-default {
+    margin-bottom: 20px;
+}
+
+div.row {
+    display: flex;
+}
+
+.flex, .flex div.csc-default, .flex picture {
+    display: flex;
+}
+
+.flex div.csc-default {
+    width: 100%;
+}
+
+.flex picture {
+    width: 100%;
+}
+
+picture.icon {
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+}
+picture.icon span.glyphicon {
+    margin: auto;
+}
+
+.hw-green h2,
+.hw-green h3 {
+    color: #4A9E3A;
+}
+
+.hw-green picture {
+    background-color: #4A9E3A;
+}
+
+.hw-blue h2,
+.hw-blue h3 {
+    color: #22465D;
+}
+
+.hw-blue picture {
+    background-color: #22465D;
+}
+
+ul {
+    margin-top: 15px;
+    list-style-image: url(img/ul-img.png);
+    list-style-position: outside;
+}
+
+ul li {
+    padding-left: 10px;
+    margin-bottom: 5px;
 }
